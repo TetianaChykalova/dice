@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Dice</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="fixed">
+<!--        обнуление, кубик картинка, кнопка бросить кубик, кнопка оставить -->
+
+        <div>
+            <button id="rules">
+                Правила гри
+            </button>
+            <button id="new-game">
+                Нова гра
+            </button>
+        </div>
+
+        <div class="fixed-img">
+            <img src="img/dice1.png" alt="dice" id="dice">
+        </div>
+
+        <div>
+            <button id="throw-dice">
+                Кинути кубик
+            </button>
+
+            <button id="leave-points">
+                Залишити кількість очок
+            </button>
+        </div>
+    </div>
+    <div class="gamer gamer-active" id="gamer-0">
+<!--        заголовок, количество очков общее, количество очков за ход-->
+
+        <h2>Гравець 1</h2>
+        <div class="general-points">
+            <p>Загальна кількість очок</p>
+            <p id="general-points-0">0</p>
+        </div>
+        <div class="turn-points">
+            <p>Кількість очок за ход</p>
+            <p id="turn-points-0">0</p>
+        </div>
+    </div>
+    <div class="gamer" id="gamer-1">
+        <h2>Гравець 1</h2>
+        <div class="general-points">
+            <p>Загальна кількість очок</p>
+            <p id="general-points-1">0</p>
+        </div>
+        <div class="turn-points">
+            <p>Кількість очок за ход</p>
+            <p id="turn-points-1">0</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
